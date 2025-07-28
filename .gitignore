@@ -1,3 +1,5 @@
+### Godot ###
+### https://github.com/github/gitignore/blob/main/Godot.gitignore
 # Godot 4+ specific ignores
 .godot/
 .nomedia
@@ -14,3 +16,30 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+### macOS ###
+### https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon[]
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
