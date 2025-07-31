@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cnrg5p728uw6m"]
+[gd_scene load_steps=2 format=3 uid="uid://cnrg5p728uw6m"]
+
+[ext_resource type="FontFile" uid="uid://d4d4a6q57e32s" path="res://fonts/lm/lmroman10-bold.otf" id="1_y38sv"]
 
 [node name="Label" type="Label"]
 anchors_preset = 8
@@ -12,6 +14,7 @@ offset_right = 277.0
 offset_bottom = 63.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y38sv")
 theme_override_font_sizes/font_size = 72
 text = "Hello, World!"
 horizontal_alignment = 1
