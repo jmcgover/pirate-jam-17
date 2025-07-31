@@ -1,8 +1,18 @@
 [gd_scene format=3 uid="uid://cnrg5p728uw6m"]
 
 [node name="Label" type="Label"]
-offset_left = 464.0
-offset_top = 492.0
-offset_right = 564.0
-offset_bottom = 515.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -277.0
+offset_top = -62.0
+offset_right = 277.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 72
 text = "Hello, World!"
+horizontal_alignment = 1
+vertical_alignment = 1
