@@ -1,6 +1,6 @@
 extends Sprite2D
 
-signal health_depleted
+signal health_changed(old_value, new_value)
 
 var health = 10
 
@@ -39,6 +39,6 @@ func _on_timer_timeout():
 
 
 func take_damage(amount):
+	var old_health = health
 	health -= amount
-	if health <= 0:
-		health_depleted.emit()
+	health_changed.emit(old_health, health)
