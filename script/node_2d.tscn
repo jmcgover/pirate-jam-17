@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmgjggng01yxt"]
+
+[ext_resource type="PackedScene" uid="uid://0un5jlta446s" path="res://sprite_2d.tscn" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://dmhjki7qq1cj5" path="res://square_32.svg" id="2_epypp"]
+[ext_resource type="FontFile" uid="uid://diexvfic1tncs" path="res://fonts/lmroman12-bold.otf" id="3_0hol4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" parent="." instance=ExtResource("1_wtcfe")]
+texture = ExtResource("2_epypp")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 138.0
+offset_top = 74.0
+offset_right = 361.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("3_0hol4")
+theme_override_font_sizes/font_size = 24
+text = "Toggle Visibility"
+
+[connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]
